@@ -1,2 +1,2 @@
-# Vaisaly-s-Portfolio
+# VaisalyPortfolio
 This is my portfolio website

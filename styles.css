@@ -2,7 +2,7 @@
 :root{
     --primary-color: #a855f7;
     --primary-color-dark: #9333ea;
-    --secondary-color: #ca8a04;
+    --secondary-color: #4d8693;
     --text-dark: #1f2937;
     --text-light: #6b7280;
     --extra-light: #faf5ff;
@@ -182,7 +182,6 @@ ul li a:hover{
     border-radius: 100%;
 }
 
-
 @media (width < 750px){
     nav .checkbox{
         display: block;
@@ -216,6 +215,4 @@ ul li a:hover{
     .action_btns{
         margin: auto;
     }
-
-
 }

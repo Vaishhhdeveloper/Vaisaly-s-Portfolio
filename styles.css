@@ -181,7 +181,26 @@ ul li a:hover{
     width: min(25rem, 90%);
     border-radius: 100%;
 }
-
+footer{
+    background-color: var(--extra-light);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0px 30px 0px 30px;
+}
+.icons a{
+    text-decoration: none;
+    color: inherit;
+}
+.my-custom-button {
+    background-color: var(--primary-color);
+    color: var(--extra-light);
+  }
 @media (width < 750px){
     nav .checkbox{
         display: block;

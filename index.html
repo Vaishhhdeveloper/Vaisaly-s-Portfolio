@@ -16,7 +16,7 @@
     />
     <link href="styles.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="falling-text">
     <nav>
       <div class="nav_content">
         <div class="logo">
@@ -41,7 +41,7 @@
       <div class="section_container">
         <div class="content">
           <p class="subtitle">HELLO</p>
-          <h1 class="title">
+          <h1 class="title animated-text">
             I'm<span>Vaisaly <br />A</span>Web developer
           </h1>
           <p class="description">
@@ -57,6 +57,139 @@
         </div>
       </div>
     </section>
+    <div id="about">
+      <div class="container px-4 py-5" id="custom-cards">
+        <h2
+          style="
+            text-align: center;
+            font-weight: 600;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            color: var(--primary-color);
+          "
+        >
+          EDUCATION
+        </h2>
+
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="background-image: url('images/clg6.jfif')"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">B.E. CSE</h3>
+                <p style="font-weight: 600">
+                  Aalim Muhammed salegh college of engineering
+                </p>
+
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="images/aalimeclogo.jfif"
+                      alt="College logo"
+                      width="40"
+                      height="40"
+                      class="rounded-circle border border-white"
+                    />
+                  </li>
+                  <li
+                    style="font-weight: 600"
+                    class="d-flex align-items-center me-3"
+                  >
+                    <i class="ri-map-pin-line"></i>
+                    <small>Avadi</small>
+                  </li>
+                  <li
+                    style="font-weight: 600"
+                    class="d-flex align-items-center"
+                  >
+                    <i class="ri-calendar-event-line"></i>
+                    <small> 2021-2025</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="background-image: url('unsplash-photo-2.jpg')"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  Much longer title that wraps to multiple lines
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="https://github.com/twbs.png"
+                      alt="Bootstrap"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white"
+                    />
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>Pakistan</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>4d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="background-image: url('unsplash-photo-3.jpg')"
+            >
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  Another longer title belongs here
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="https://github.com/twbs.png"
+                      alt="Bootstrap"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white"
+                    />
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>California</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>5d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="projects">
       <h2
         style="
@@ -81,19 +214,28 @@
             />
           </div>
           <div class="col-lg-6">
-            <h3 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-              Website for International conference
-            </h3>
+            <h2
+              style="
+                color: var(--primary-color);
+                letter-spacing: 2px;
+                font-weight: 600;
+              "
+            >
+              Website for International Conference
+            </h2>
             <p class="lead">
               Developed a comprehensive website for our college's international
-              conference on INTERNATIONAL CONFERENCE ON EMERGING TECHNOLOGIES
-              AND INNOVATION (ICETI-2024). The website served as the primary
-              platform for disseminating information about the event,
-              facilitating registrations, and showcasing speakers. I created a
-              user-friendly and visually appealing interface using google sites.
-              The website received positive feedback from attendees and
-              contributed to the conference's overall success by providing a
-              seamless user experience.
+              conference on
+              <span style="color: var(--primary-color); font-weight: 600"
+                >INTERNATIONAL CONFERENCE ON EMERGING TECHNOLOGIES AND
+                INNOVATION (ICETI-2024)</span
+              >. The website served as the primary platform for disseminating
+              information about the event, facilitating registrations, and
+              showcasing speakers. I created a user-friendly and visually
+              appealing interface using google sites. The website received
+              positive feedback from attendees and contributed to the
+              conference's overall success by providing a seamless user
+              experience.
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
               <a href="https://www.iceti.tech/"
@@ -110,19 +252,27 @@
       </div>
     </div>
     <div class="px-4 pt-5 my-5 text-center border-bottom">
-      <h3 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+      <h2
+        style="
+          color: var(--primary-color);
+          letter-spacing: 2px;
+          font-weight: 600;
+        "
+      >
         Procurement Process Optimization Prototype
-      </h3>
+      </h2>
       <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">
-          Developed a procurement process optimization prototype using Figma.
-          Working as a team,by conducting in-depth user research and analyzing
-          existing workflows, designed a user-centric interface that simplified
-          complex tasks. The prototype focused on automating routine approvals,
-          improving visibility into the procurement process, and reducing manual
-          data entry. This project demonstrated a strong understanding of user
-          needs and the potential to significantly enhance procurement
-          efficiency.
+          Developed a
+          <span style="color: var(--primary-color); font-weight: 600">
+            procurement process optimization prototype using Figma</span
+          >. Working as a team,by conducting in-depth user research and
+          analyzing existing workflows, designed a user-centric interface that
+          simplified complex tasks. The prototype focused on automating routine
+          approvals, improving visibility into the procurement process, and
+          reducing manual data entry. This project demonstrated a strong
+          understanding of user needs and the potential to significantly enhance
+          procurement efficiency.
         </p>
       </div>
       <!-- <div class="overflow-hidden" style="max-height: 30vh">
@@ -135,22 +285,73 @@
       class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
     >
       <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-        <h3 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+        <h2
+          style="
+            color: var(--primary-color);
+            letter-spacing: 2px;
+            font-weight: 600;
+          "
+        >
           Interactive Drum Kit
-        </h3>
+        </h2>
         <p class="lead">
-          Developed a dynamic and interactive web-based drum kit, as a part of
-          my web development bootcamp,that allows users to play various drum
-          sounds by clicking on virtual drum pads or pressing corresponding
-          keys. The project effectively demonstrates proficiency in JavaScript
-          DOM manipulation, event handling, and audio integration.Utilized HTML,
-          CSS, and JavaScript to create a responsive and visually appealing drum
-          kit interface.
+          Developed a
+          <span style="color: var(--primary-color); font-weight: 600"
+            >dynamic and interactive web-based drum kit</span
+          >, as a part of my web development bootcamp,that allows users to play
+          various drum sounds by clicking on virtual drum pads or pressing
+          corresponding keys. The project effectively demonstrates
+          <span style="color: var(--primary-color); font-weight: 600"
+            >proficiency in JavaScript DOM manipulation, event handling, and
+            audio integration</span
+          >.Utilized HTML, CSS, and JavaScript to create a responsive and
+          visually appealing drum kit interface.
         </p>
         <div
           class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
         >
           <a href="https://vaishhhdeveloper.github.io/Drum-kit-usingJS/"
+            ><button
+              type="button"
+              class="btn my-custom-button btn-lg px-4 me-md-2 fw-bold"
+            >
+              Link
+            </button></a
+          >
+        </div>
+      </div>
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+        <img class="rounded-lg-3" src=".." alt="drum kit project" width="720" />
+      </div>
+    </div>
+    <div
+      class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
+    >
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h2
+          style="
+            color: var(--primary-color);
+            letter-spacing: 2px;
+            font-weight: 600;
+          "
+        >
+          Dice Game
+        </h2>
+        <p class="lead">
+          Developed a
+          <span style="color: var(--primary-color); font-weight: 600"
+            >two-player dice game using HTML, CSS, and JavaScript.</span
+          >The game simulates a classic dice roll, where players compete to
+          achieve the higher number.
+          <span style="color: var(--primary-color); font-weight: 600"
+            >The project showcases proficiency in JavaScript's DOM manipulation,
+            random number generation, and basic game logic implementation.</span
+          >
+        </p>
+        <div
+          class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
+        >
+          <a href="https://vaishhhdeveloper.github.io/Dice-game-JS/"
             ><button
               type="button"
               class="btn my-custom-button btn-lg px-4 me-md-2 fw-bold"

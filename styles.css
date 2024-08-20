@@ -49,6 +49,15 @@ body{
       }
       
 }
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
 .animated-text {
     animation-name: myAnimation;
     animation-duration: 2s;
@@ -91,7 +100,7 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #ffff;
+    /* background-color: #ffff; */
     z-index: 99;
 }
 .nav_content{
@@ -143,9 +152,9 @@ ul li a:hover{
     border-bottom-color: var(--secondary-color);
     color: var(--secondary-color);
 }
-.section{
+/* .section{
     background-color: var(--extra-light);
-}
+} */
 .section_container{
     min-height: 100vh;
     max-width: var(--max-width);
@@ -219,7 +228,7 @@ ul li a:hover{
     border-radius: 100%;
 }
 footer{
-    background-color: var(--extra-light);
+    /* background-color: var(--extra-light); */
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -238,6 +247,7 @@ footer{
     background-color: var(--primary-color);
     color: var(--extra-light);
   }
+  
 @media (width < 750px){
     nav .checkbox{
         display: block;

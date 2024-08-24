@@ -329,6 +329,7 @@ main.rows{
 }
 .subject{
     font-size: 18px;
+    letter-spacing: 2px;
     font-weight: thin;
     color: var(--primary-color);
     padding-bottom: 15px;
